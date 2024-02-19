@@ -1,0 +1,133 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* Estilo específico para el input de cantidad de baños */
+#cantidad-baños, #cantidad-habitaciones,#cantidad-balas,#cantidad-electricos{
+     
+    width: 10%; /* Ancho del input */
+    padding: 5px; /* Espaciado interno */
+    border: 1px solid blue; /* Borde azul */
+    border-radius: 5px; /* Radio de borde */
+    margin-bottom: 0.1px; /* Margen inferior */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Sombra azul cuando tiene foco */
+    outline: none; /* No mostrar contorno */
+    
+}
+
+button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f57c00;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+#presentation {
+    background-image: url('descarga.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+#espacio-encabezado{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
