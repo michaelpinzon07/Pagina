@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Web de Construcción</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para pantallas pequeñas */
+        @media only screen and (max-width: 600px) {
+            /* Agrega tus estilos específicos para pantallas pequeñas aquí */
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +35,6 @@
 
         </div>
     </section>
-
 
     <section id="contact-form">
         <div class="content">
@@ -66,25 +71,19 @@
         </div>
     </section>
 
-    <div class="espacio-encabezado">
-
-    </div>
+    <div class="espacio-encabezado"></div>
 
     <footer>
         <p>&copy; 2024 Empresa de Construcción. Todos los derechos reservados.</p>
     </footer>
 
-
-
     <script>
-
-document.getElementById("miFormulario").addEventListener("submit", function(event) {
-    // Evitar que el formulario se envíe automáticamente
-    event.preventDefault();
-    
-    // Llamar a la función enviarFormulario() si todos los campos son válidos
-    enviarFormulario();
-});
+        document.getElementById("miFormulario").addEventListener("submit", function(event) {
+            // Evitar que el formulario se envíe automáticamente
+            event.preventDefault();
+            // Llamar a la función enviarFormulario() si todos los campos son válidos
+            enviarFormulario();
+        });
 
         function enviarFormulario() {
             var nombre = document.getElementById('nombre').value;
@@ -94,22 +93,17 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
             var direccion = document.getElementById('direccion').value;
             var metraje = document.getElementById('metraje').value;
 
-
-
-
-
             // Realizamos una petición AJAX para enviar los datos al script de Google Apps Script
             var xhr = new XMLHttpRequest();
             var url = 'https://script.google.com/macros/s/AKfycbzYt_L0QnXTQrWQEbnTDsL_Z4eir0iAdOA5Z-p2bcNVq1aluqXlZ8DcsH98-nxdjLHJ/exec';
-            var params = 'nombre=' + encodeURIComponent(nombre) + '&email=' + encodeURIComponent(email) + '&celular=' + encodeURIComponent(celular)+ '&ciudad=' + encodeURIComponent(ciudad)+ '&direccion=' + encodeURIComponent(direccion)+ '&metraje=' + encodeURIComponent(metraje);
+            var params = 'nombre=' + encodeURIComponent(nombre) + '&email=' + encodeURIComponent(email) + '&celular=' + encodeURIComponent(celular) + '&ciudad=' + encodeURIComponent(ciudad) + '&direccion=' + encodeURIComponent(direccion) + '&metraje=' + encodeURIComponent(metraje);
             xhr.open('POST', url);
             xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
-            xhr.onload = function () {
+            xhr.onload = function() {
                 // Verificamos si la solicitud se completó correctamente (código de estado 200)
                 if (xhr.status === 200) {
                     // Redirigimos al usuario a la página deseada después de que los datos se guarden correctamente
-
                     var metraje = document.getElementById('metraje').value;
                     var url = 'pagina3.html?metros=' + metraje;
                     window.location.href = url;
@@ -120,15 +114,8 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
             };
 
             // Enviamos la solicitud con los parámetros del formulario
-
             xhr.send(params);
-
-
         }
-
-
-
-
     </script>
 </body>
 
