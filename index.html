@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web de Construcción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Metrical Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="presentation">
+        <div class="content">
+            <h2>Bienvenido a nuestra empresa de construcción</h2>
+            <p>Somos expertos en construcción residencial y comercial, con una larga trayectoria en el mercado.</p>
+
+        </div>
+    </section>
+
+
+    <section id="contact-form">
+        <div class="content">
+            <h2>¡Realiza tu cotización!</h2>
+            <!-- Formulario único con todos los campos -->
+            <form id="miFormulario">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="celular">Número de Celular:</label>
+                    <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required>
+                    <small>Ingrese un número de celular válido (10 dígitos)</small>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="metraje">Metros:</label>
+                    <input type="number" id="metraje" name="metraje" required>
+                </div>
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="espacio-encabezado">
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Empresa de Construcción. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+    <script>
+
+document.getElementById("miFormulario").addEventListener("submit", function(event) {
+    // Evitar que el formulario se envíe automáticamente
+    event.preventDefault();
+    
+    // Llamar a la función enviarFormulario() si todos los campos son válidos
+    enviarFormulario();
+});
+
+        function enviarFormulario() {
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var celular = document.getElementById('celular').value;
+            var ciudad = document.getElementById('ciudad').value;
+            var direccion = document.getElementById('direccion').value;
+            var metraje = document.getElementById('metraje').value;
+
+
+
+
+
+            // Realizamos una petición AJAX para enviar los datos al script de Google Apps Script
+            var xhr = new XMLHttpRequest();
+            var url = 'https://script.google.com/macros/s/AKfycbzYt_L0QnXTQrWQEbnTDsL_Z4eir0iAdOA5Z-p2bcNVq1aluqXlZ8DcsH98-nxdjLHJ/exec';
+            var params = 'nombre=' + encodeURIComponent(nombre) + '&email=' + encodeURIComponent(email) + '&celular=' + encodeURIComponent(celular)+ '&ciudad=' + encodeURIComponent(ciudad)+ '&direccion=' + encodeURIComponent(direccion)+ '&metraje=' + encodeURIComponent(metraje);
+            xhr.open('POST', url);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function () {
+                // Verificamos si la solicitud se completó correctamente (código de estado 200)
+                if (xhr.status === 200) {
+                    // Redirigimos al usuario a la página deseada después de que los datos se guarden correctamente
+
+                    var metraje = document.getElementById('metraje').value;
+                    var url = 'pagina3.html?metros=' + metraje;
+                    window.location.href = url;
+                } else {
+                    // Manejamos cualquier error que ocurra durante la solicitud
+                    alert('Error al guardar los datos. Inténtalo de nuevo más tarde.');
+                }
+            };
+
+            // Enviamos la solicitud con los parámetros del formulario
+
+            xhr.send(params);
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

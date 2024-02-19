@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles1.css">
+
+    <style>
+        /* Estilo para los productos y precios */
+        ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Alinea verticalmente los elementos */
+            margin-bottom: 5px;
+            /* Añade espacio entre cada producto */
+        }
+
+        .sección {
+            border: 2px solid black;
+            /* Añade un borde negro a cada sección */
+            padding: 10px;
+            /* Añade espacio alrededor del contenido de cada sección */
+            margin-bottom: 20px;
+            /* Añade espacio entre cada sección */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Basico</h1>
+    </header>
+
+    <div id="espacio-encabezado"></div>
+
+    <section id="products">
+        <div class="content">
+
+            <div class="sección">
+                <ul>
+                    <li>
+                        <h2>Cocina</h2>
+                        <label id="precio-cocina"></label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="mueble-bajo">Mueble Bajo - Hasta 1.50 ml (Armado Blanco, Puertas Ref
+                            seccionadas)</label>
+                        <label id="precio-mueble-bajo"></label>
+                    </li>
+                    <li>
+                        <label for="mueble-alto">Mueble Alto - Hasta 1.50 ml (Armado Blanco, Puertas Ref
+                            seccionadas)</label>
+                        <label id="precio-mueble-alto"></label>
+                    </li>
+                    <li>
+                        <label for="meson-acero">Meson Acero inoxidable con estufa 4 puestos - Marca Abba o
+                            similar</label>
+                        <label id="precio-meson-acero"></label>
+                    </li>
+                    <li>
+                        <label for="campana-extractora">Campana extractora 60 cm - Marca Abba o similar</label>
+                        <label id="precio-campana-extractora"></label>
+                    </li>
+                    <li>
+                        <label for="salpicadero-enchapado">Salpicadero enchapado</label>
+                        <label id="precio-salpicadero-enchapado"></label>
+                    </li>
+                    <li>
+                        <label for="enchape-piso">Enchape de Piso</label>
+                        <label id="precio-enchape-piso"></label>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="sección">
+                <ul>
+                    <li>
+                        <h2>Baños</h2>
+                        <label id="precio-baños"></label>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <label for="mueble-lavamanos">Mueble Lavamanos con lavamanos y griferia</label>
+                        <label id="precio-mueble-lavamanos"></label>
+                    </li>
+                    <li>
+                        <label for="sanitario">Sanitario ahorrador</label>
+                        <label id="precio-sanitario"></label>
+                    </li>
+                    <li>
+                        <label for="ducha">Division de Ducha en vidrio templado de 6 mm</label>
+                        <label id="precio-ducha"></label>
+                    </li>
+                    <li>
+                        <label for="espejo">Espejo de 1,20 m x 1,20 m</label>
+                        <label id="precio-espejo"></label>
+                    </li>
+                    <li>
+                        <label for="puerta-baño">Puerta de Baño </label>
+                        <label id="precio-puerta-baño"></label>
+                    </li>
+                    <li>
+                        <label for="enchape-piso">Enchape de Piso</label>
+                        <label id="precio-enchape-piso-baño"></label>
+                    </li>
+                    <li>
+                        <label for="enchape-ducha">Enchape de cabina de ducha</label>
+                        <label id="precio-enchape-ducha"></label>
+                    <li>
+
+                        <label for="cantidad-baños">Cantidad de baños:</label>
+                        <input type="number" id="cantidad-baños" min="1" value="1">
+
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="sección">
+
+                <ul>
+                    <li>
+                        <h2>Habitación</h2>
+                        <label id="precio-habitacion"></label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="puerta-cerradura">Puerta con cerradura</label>
+                        <label id="precio-puerta-cerradura"></label>
+                    </li>
+                    <li>
+                        <label for="closet">Closet - Hasta 2,00 ml</label>
+                        <label id="precio-closet"></label>
+                    </li>
+                    <li>
+
+                        <label for="cantidad-habitaciones">Cantidad de Habitaciones:</label>
+                        <input type="number" id="cantidad-habitaciones" min="1" value="1">
+
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div class="sección">
+
+                <ul>
+                    <li>
+                        <h2>General</h2>
+                        <label id="precio-general"></label>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <label for="alistadopisos">Alistado de Piso</label>
+                        <label id="precio-alistadopisos"></label>
+                    </li>
+                    <li>
+                        <label for="piso-laminado">Piso Laminado</label>
+                        <label id="precio-laminado"></label>
+                    </li>
+                    <li>
+                        <label for="estuco">Estuco</label>
+                        <label id="precio-estuco"></label>
+                    </li>
+                    <li>
+                        <label for="pintura">Pintura </label>
+                        <label id="precio-pintura"></label>
+                    </li>
+                    <li>
+                        <label for="cielo-raso">Alistado Cielo Raso </label>
+                        <label id="precio-cielo-raso"></label>
+
+                    </li>
+                    <li>
+                        <label for="balas">Balas (Numero de unidades)</label>
+                        <label id="precio-balas"></label>
+
+                    </li>
+                    <li>
+
+                        <label for="cantidad-balas">Cantidad de balas:</label>
+                        <input type="number" id="cantidad-balas" min="1" value="1">
+
+                    </li>
+                    <li>
+                        <label for="aparatos-electricos">Aparatos electricos (Numero de unidades)</label>
+                        <label id="precio-aparatos-electricos"></label>
+                    </li>
+
+                
+                    <li>
+                        <label for="cantidad-electricos">Cantidad de Aparatos Electricos:</label>
+                        <input type="number" id="cantidad-electricos" min="1" value="1">
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <ul>
+                <li>
+                    <label for="precio-total-cotizacion">Precio Total Cotización: </label>
+                    <label id="precio-total-cotizacion"></label>
+                </li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <button id="calcular-precio-total">Calcular Precio Total</button>
+    <p id="precio-total-cotizacion"></p>
+
+    <footer>
+        <p>&copy; 2024 Empresa de Construcción. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var metros = parseInt(urlParams.get('metros'));
+
+
+            //cocina
+            var p_meson = 2600000 * 1.3;
+            var p_campana = 300000 * 1.3;
+            var p_salpicadero = 56000 * 1.5;
+            var p_enchape_piso = 72000 * (metros * 0.1);
+            var p_cocina = p_meson + p_campana + p_salpicadero + p_enchape_piso;
+
+
+           //baños
+            var p_lavamanos = 550000 * 1.4;
+            var p_sanitario = 450000 * 1.4;
+            var p_ducha = 600000 * 1.3;
+            var p_espejo = 150000;
+            var p_puerta_baño = 550000;
+            var p_enchape_piso_baño = 72000 * (metros * 0.05);
+            var p_enchape_ducha = 72000 * (2.3 * (0.9 * 3));
+            var p_baños = p_lavamanos + p_sanitario + p_ducha + p_espejo + p_puerta_baño + p_enchape_piso_baño + p_enchape_ducha;
+
+            //habitacion
+            var p_puerta_cerradura = 550000;
+            var p_closet = 1500000;
+            var p_habitacion = p_puerta_cerradura + p_closet;
+
+            //general
+            var p_alistadopisos = 22000;
+            var p_laminado = 65000 * 1.3;
+            var p_estuco = 13000 * 1.4;
+            var p_pintura = 9000 * 1.4;
+            var p_cielo_raso = p_pintura + p_estuco;
+            var p_balas = 25000 * 1.3;
+            var p_aparatos_electricos = 12000 * 1.3;
+            var piso = metros * 0.85;
+            var muro = metros * 3;
+            var p_balas = 25000 * 1.3;
+            var p_aparatos_electricos = 12000 * 1.3;
+
+            // Escucha el evento input en los elementos de cantidad
+            document.getElementById("cantidad-baños").addEventListener("input", calcularPrecioTotal);
+            document.getElementById("cantidad-habitaciones").addEventListener("input", calcularPrecioTotal);
+            document.getElementById("cantidad-balas").addEventListener("input", calcularPrecioTotal);
+            document.getElementById("cantidad-electricos").addEventListener("input", calcularPrecioTotal);
+
+            // Función para calcular el precio total
+            function calcularPrecioTotal() {
+                var cantidadBaños = parseInt(document.getElementById("cantidad-baños").value);
+                var cantidadHabitaciones = parseInt(document.getElementById("cantidad-habitaciones").value);
+                var cantidadBalas = parseInt(document.getElementById("cantidad-balas").value);
+                var cantidadElectricos = parseInt(document.getElementById("cantidad-electricos").value);
+
+                // Realizar los cálculos necesarios
+                var totalBaños = p_baños * cantidadBaños;
+                var totalHabitaciones = p_habitacion * cantidadHabitaciones;
+                var totalBalas = p_balas * cantidadBalas;
+                var totalElectricos = p_aparatos_electricos * cantidadElectricos;
+                var totalGeneral = (p_alistadopisos * metros) + (p_laminado * piso) + (p_estuco * muro) + (p_pintura * muro) + (totalBalas) + (totalElectricos) + (p_cielo_raso * metros); 
+                var totalCotizacion = totalBaños + totalHabitaciones + totalGeneral+ p_cocina;
+
+                // Actualizar los elementos en la página con los nuevos valores calculados
+                document.getElementById("precio-cocina").innerText = "$" + p_cocina.toLocaleString('es-ES', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                });
+
+                document.getElementById("precio-baños").innerText = "$" + totalBaños.toLocaleString('es-ES', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                });
+                document.getElementById("precio-habitacion").innerText = "$" + totalHabitaciones.toLocaleString('es-ES', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                });
+               
+                
+                document.getElementById("precio-general").innerText = "$" + totalGeneral.toLocaleString('es-ES', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                });
+
+                document.getElementById("precio-total-cotizacion").innerText = "$" + totalCotizacion.toLocaleString('es-ES', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                });
+            }
+
+            // Llama a la función para calcular el precio total al cargar la página
+            calcularPrecioTotal();
+        });
+    </script>
+</body>
+
+</html>
+
