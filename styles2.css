@@ -52,7 +52,7 @@ body {
     
 
     .content {
-        width: 70%; /* O ajusta el ancho según sea necesario */
+        width: 100%; /* O ajusta el ancho según sea necesario */
         /*float: left;/* /* Cambia el float a la derecha */
         margin: 0 auto;
         background-color: #fff;
@@ -63,7 +63,7 @@ body {
     
     .content-izq {
         display: none;
-        width: 70%; /* O ajusta el ancho según sea necesario */
+        width: 100%; /* O ajusta el ancho según sea necesario */
         /*float: right; *//* Mantén el float a la izquierda */
         margin: 0 auto;
         background-color: #fff;
