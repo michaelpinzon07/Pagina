@@ -52,8 +52,8 @@ body {
     
 
     .content {
-        width: 40%; /* O ajusta el ancho según sea necesario */
-        float: left; /* Cambia el float a la derecha */
+        width: 100%; /* O ajusta el ancho según sea necesario */
+        /*float: left;/* /* Cambia el float a la derecha */
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/*hace sombra o una caja como blanca */
         padding: 30px;
@@ -62,8 +62,8 @@ body {
     
     .content-izq {
         display: none;
-        width: 50%; /* O ajusta el ancho según sea necesario */
-        float: right; /* Mantén el float a la izquierda */
+        width: 100%; /* O ajusta el ancho según sea necesario */
+        /*float: right; *//* Mantén el float a la izquierda */
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 30px;
