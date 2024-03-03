@@ -1,0 +1,148 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    }
+
+/*
+    nav ul {
+        list-style: none;
+    }
+    */
+
+
+    /*
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    */
+
+    /*
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }*/
+
+    
+    /*
+    nav ul li a.active {
+        font-weight: bold;
+    }*/
+
+    
+    h1{
+        font-size: 70px;
+        font-family:"Moon Light";
+        src: url('Moon\ Light.otf') format('opentype'); 
+    }
+    
+    #presentation {
+        /* background-size: cover;*/ /* Ajusta el tamaño de la imagen para cubrir todo el área del encabezado */
+        background-image:url(Imagen.jpeg);
+        background-position: center; /* Centra la imagen en el encabezado */
+        color:white;
+        text-align: center;
+        padding: 100px;
+        border-radius: 30px;
+    }
+    
+    #contact-form {
+        overflow: hidden; /*hace que el footer se vaya abajo*/
+        /*justify-content: space-between; */
+    }
+    
+
+    .content {
+        width: 40%; /* O ajusta el ancho según sea necesario */
+        float: left; /* Cambia el float a la derecha */
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/*hace sombra o una caja como blanca */
+        padding: 30px;
+        border-radius: 3%;
+    }
+    
+    .content-izq {
+        display: none;
+        width: 50%; /* O ajusta el ancho según sea necesario */
+        float: right; /* Mantén el float a la izquierda */
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        border-radius: 3%;
+    }
+
+
+    
+    .button {
+        /*display: inline-block; */ /*sirve para poner los botones a la derecha del otro*/
+        background-color: #ff9800;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px; /*espacio arriba -top*/
+    }
+     
+    /*
+    .section {
+        padding: 50px 0;
+        text-align: center;
+    }*/
+    
+    /*
+    .service {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px;
+    }*/
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    
+    /* añadido por mi */
+
+    
+    .form-group {
+        margin-bottom: 20px; /*hace que haya mas espacio entre labels en el formulario*/
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;/*hace que haya mas espacio entre labels cotizacion*/
+        
+    }
+    
+    input[type="number"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 96%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .espacio-encabezado {
+       /* margin-top: 20px;*/
+        margin-bottom: 20px;
+    }
+    
+    
+    .sección1 {
+        border-radius: 20px;
+        padding:10px;  /*rellena espacio a cada lado*/
+        margin-bottom: 20px;  /* Añade espacio entre cada sección */
+        background-color:#a58e74;
+        color: #ffefcd;
+        
+    }
+
+
+    /*los input dentro de la clase .content-izq*/
+    .content-izq input {
+        width: 5%; 
+    }
+    
