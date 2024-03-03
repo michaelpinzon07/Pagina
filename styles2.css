@@ -52,7 +52,7 @@ body {
     
 
     .content {
-        width: 100%; /* O ajusta el ancho según sea necesario */
+        width: 70%; /* O ajusta el ancho según sea necesario */
         /*float: left;/* /* Cambia el float a la derecha */
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/*hace sombra o una caja como blanca */
@@ -62,7 +62,7 @@ body {
     
     .content-izq {
         display: none;
-        width: 100%; /* O ajusta el ancho según sea necesario */
+        width: 70%; /* O ajusta el ancho según sea necesario */
         /*float: right; *//* Mantén el float a la izquierda */
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
