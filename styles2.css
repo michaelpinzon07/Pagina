@@ -54,6 +54,7 @@ body {
     .content {
         width: 70%; /* O ajusta el ancho según sea necesario */
         /*float: left;/* /* Cambia el float a la derecha */
+        margin: 0 auto;
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/*hace sombra o una caja como blanca */
         padding: 30px;
@@ -64,6 +65,7 @@ body {
         display: none;
         width: 70%; /* O ajusta el ancho según sea necesario */
         /*float: right; *//* Mantén el float a la izquierda */
+        margin: 0 auto;
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 30px;
