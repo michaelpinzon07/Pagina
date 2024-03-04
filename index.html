@@ -3,36 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Web de Construcción</title>
     <link rel="stylesheet" href="styles2.css">
-    <style>
-        /* Estilos específicos para pantallas pequeñas */
-        @media only screen and (max-width: 600px) {
-            /* Agrega tus estilos específicos para pantallas pequeñas aquí */
-        }
-    </style>
+    <meta name="viewport" content="width=device-width",user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0>
 </head>
 
 <body>
-    <section id="presentation">
-        <div class="Content-type">
-            <h1>REMODELA A BAJO COSTO Y SIN COMPLICACIONES!</h1>
-        </div>
-    </section>
 
-    <section id="contact-form" >
+    <div class="general">
+        <section id="presentation">
+            <div class="Content-type">
+                <h1>REMODELA A BAJO COSTO Y SIN COMPLICACIONES!</h1>
+            </div>
+        </section>
 
-     
-
-        <form id="miFormulario">
+        <section id="contact-form">
 
 
-            <div class="content">
-                
+
+            <form id="miFormulario">
+
+
+                <div class="content">
+
                     <h2>¡Realiza tu cotización!</h2>
                     <!-- Formulario único con todos los campos -->
-                    
+
 
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
@@ -61,207 +57,207 @@
                     </div>
                     <button type="button" class="button" onclick="guardarMetros_mostrar()">COTIZAR</button>
                 </div>
-           
-          
 
 
 
 
-            <div class="content-izq">
 
-                <div class="sección1">
+
+                <div class="content-izq">
+
+                    <div class="sección1">
+                        <ul>
+                            <li>
+                                <h2>Cocina</h2>
+                                <label id="precioCocina"></label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label for="mueble-bajo">Mueble Bajo - Hasta 1.50 ml (Armado Blanco, Puertas Ref
+                                    seccionadas)</label>
+                                <label id="precio-mueble-bajo"></label>
+                            </li>
+                            <li>
+                                <label for="mueble-alto">Mueble Alto - Hasta 1.50 ml (Armado Blanco, Puertas Ref
+                                    seccionadas)</label>
+                                <label id="precio-mueble-alto"></label>
+                            </li>
+                            <li>
+                                <label for="meson-acero">Meson Acero inoxidable con estufa 4 puestos - Marca Abba o
+                                    similar</label>
+                                <label id="precio-meson-acero"></label>
+                            </li>
+                            <li>
+                                <label for="campana-extractora">Campana extractora 60 cm - Marca Abba o similar</label>
+                                <label id="precio-campana-extractora"></label>
+                            </li>
+                            <li>
+                                <label for="salpicadero-enchapado">Salpicadero enchapado</label>
+                                <label id="precio-salpicadero-enchapado"></label>
+                            </li>
+                            <li>
+                                <label for="enchape-piso">Enchape de Piso</label>
+                                <label id="precio-enchape-piso"></label>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="sección1">
+                        <ul>
+                            <li>
+                                <h2>Baños</h2>
+                                <label id="precioBanos"></label>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <label for="mueble-lavamanos">Mueble Lavamanos con lavamanos y griferia</label>
+                                <label id="precio-mueble-lavamanos"></label>
+                            </li>
+                            <li>
+                                <label for="sanitario">Sanitario ahorrador</label>
+                                <label id="precio-sanitario"></label>
+                            </li>
+                            <li>
+                                <label for="ducha">Division de Ducha en vidrio templado de 6 mm</label>
+                                <label id="precio-ducha"></label>
+                            </li>
+                            <li>
+                                <label for="espejo">Espejo de 1,20 m x 1,20 m</label>
+                                <label id="precio-espejo"></label>
+                            </li>
+                            <li>
+                                <label for="puerta-baño">Puerta de Baño </label>
+                                <label id="precio-puerta-baño"></label>
+                            </li>
+                            <li>
+                                <label for="enchape-piso">Enchape de Piso</label>
+                                <label id="precio-enchape-piso-baño"></label>
+                            </li>
+                            <li>
+                                <label for="enchape-ducha">Enchape de cabina de ducha</label>
+                                <label id="precio-enchape-ducha"></label>
+                            </li>
+                            <li>
+
+                                <label for="cantidadBanos">Cantidad de baños:</label>
+                                <input type="number" id="cantidadBanos" min="1" value="1">
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="sección1">
+
+                        <ul>
+                            <li>
+                                <h2>Habitación</h2>
+                                <label id="precioHabitacion"></label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label for="puerta-cerradura">Puerta con cerradura</label>
+                                <label id="precio-puerta-cerradura"></label>
+                            </li>
+                            <li>
+                                <label for="closet">Closet - Hasta 2,00 ml</label>
+                                <label id="precio-closet"></label>
+                            </li>
+                            <li>
+
+                                <label for="cantidadHabitaciones">Cantidad de Habitaciones:</label>
+                                <input type="number" id="cantidadHabitaciones" min="1" value="1">
+
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="sección1">
+
+                        <ul>
+                            <li>
+                                <h2>General</h2>
+                                <label id="precioGeneral"></label>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <label for="alistadopisos">Alistado de Piso</label>
+                                <label id="precio-alistadopisos"></label>
+                            </li>
+                            <li>
+                                <label for="piso-laminado">Piso Laminado</label>
+                                <label id="precio-laminado"></label>
+                            </li>
+                            <li>
+                                <label for="estuco">Estuco</label>
+                                <label id="precio-estuco"></label>
+                            </li>
+                            <li>
+                                <label for="pintura">Pintura </label>
+                                <label id="precio-pintura"></label>
+                            </li>
+                            <li>
+                                <label for="cielo-raso">Alistado Cielo Raso </label>
+                                <label id="precio-cielo-raso"></label>
+
+                            </li>
+                            <li>
+                                <label for="balas">Balas (Numero de unidades)</label>
+                                <label id="precio-balas"></label>
+
+                            </li>
+                            <li>
+
+                                <label for="cantidadBalas">Cantidad de balas:</label>
+                                <input type="number" id="cantidadBalas" min="1" value="1">
+
+                            </li>
+                            <li>
+                                <label for="aparatos-electricos">Aparatos electricos (Numero de unidades)</label>
+                                <label id="precio-aparatos-electricos"></label>
+                            </li>
+
+
+                            <li>
+                                <label for="cantidadElectricos">Cantidad de Aparatos Electricos:</label>
+                                <input type="number" id="cantidadElectricos" min="1" value="1">
+                            </li>
+                        </ul>
+
+
+                    </div>
+
                     <ul>
                         <li>
-                            <h2>Cocina</h2>
-                            <label id="precioCocina"></label>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <label for="mueble-bajo">Mueble Bajo - Hasta 1.50 ml (Armado Blanco, Puertas Ref
-                                seccionadas)</label>
-                            <label id="precio-mueble-bajo"></label>
-                        </li>
-                        <li>
-                            <label for="mueble-alto">Mueble Alto - Hasta 1.50 ml (Armado Blanco, Puertas Ref
-                                seccionadas)</label>
-                            <label id="precio-mueble-alto"></label>
-                        </li>
-                        <li>
-                            <label for="meson-acero">Meson Acero inoxidable con estufa 4 puestos - Marca Abba o
-                                similar</label>
-                            <label id="precio-meson-acero"></label>
-                        </li>
-                        <li>
-                            <label for="campana-extractora">Campana extractora 60 cm - Marca Abba o similar</label>
-                            <label id="precio-campana-extractora"></label>
-                        </li>
-                        <li>
-                            <label for="salpicadero-enchapado">Salpicadero enchapado</label>
-                            <label id="precio-salpicadero-enchapado"></label>
-                        </li>
-                        <li>
-                            <label for="enchape-piso">Enchape de Piso</label>
-                            <label id="precio-enchape-piso"></label>
+                            <label for="precioTotalCotizacion">Precio Total Cotización: </label>
+                            <label id="precioTotalCotizacion"></label>
                         </li>
                     </ul>
 
+                    <button type="submit" class="button">Enviar</button>
                 </div>
+            </form>
 
-                <div class="sección1">
-                    <ul>
-                        <li>
-                            <h2>Baños</h2>
-                            <label id="precioBanos"></label>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <label for="mueble-lavamanos">Mueble Lavamanos con lavamanos y griferia</label>
-                            <label id="precio-mueble-lavamanos"></label>
-                        </li>
-                        <li>
-                            <label for="sanitario">Sanitario ahorrador</label>
-                            <label id="precio-sanitario"></label>
-                        </li>
-                        <li>
-                            <label for="ducha">Division de Ducha en vidrio templado de 6 mm</label>
-                            <label id="precio-ducha"></label>
-                        </li>
-                        <li>
-                            <label for="espejo">Espejo de 1,20 m x 1,20 m</label>
-                            <label id="precio-espejo"></label>
-                        </li>
-                        <li>
-                            <label for="puerta-baño">Puerta de Baño </label>
-                            <label id="precio-puerta-baño"></label>
-                        </li>
-                        <li>
-                            <label for="enchape-piso">Enchape de Piso</label>
-                            <label id="precio-enchape-piso-baño"></label>
-                        </li>
-                        <li>
-                            <label for="enchape-ducha">Enchape de cabina de ducha</label>
-                            <label id="precio-enchape-ducha"></label>
-                        </li>
-                        <li>
-
-                            <label for="cantidadBanos">Cantidad de baños:</label>
-                            <input type="number" id="cantidadBanos" min="1" value="1">
-
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div class="sección1">
-
-                    <ul>
-                        <li>
-                            <h2>Habitación</h2>
-                            <label id="precioHabitacion"></label>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <label for="puerta-cerradura">Puerta con cerradura</label>
-                            <label id="precio-puerta-cerradura"></label>
-                        </li>
-                        <li>
-                            <label for="closet">Closet - Hasta 2,00 ml</label>
-                            <label id="precio-closet"></label>
-                        </li>
-                        <li>
-
-                            <label for="cantidadHabitaciones">Cantidad de Habitaciones:</label>
-                            <input type="number" id="cantidadHabitaciones" min="1" value="1">
-
-                        </li>
-                    </ul>
-
-
-                </div>
-
-                <div class="sección1">
-
-                    <ul>
-                        <li>
-                            <h2>General</h2>
-                            <label id="precioGeneral"></label>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li>
-                            <label for="alistadopisos">Alistado de Piso</label>
-                            <label id="precio-alistadopisos"></label>
-                        </li>
-                        <li>
-                            <label for="piso-laminado">Piso Laminado</label>
-                            <label id="precio-laminado"></label>
-                        </li>
-                        <li>
-                            <label for="estuco">Estuco</label>
-                            <label id="precio-estuco"></label>
-                        </li>
-                        <li>
-                            <label for="pintura">Pintura </label>
-                            <label id="precio-pintura"></label>
-                        </li>
-                        <li>
-                            <label for="cielo-raso">Alistado Cielo Raso </label>
-                            <label id="precio-cielo-raso"></label>
-
-                        </li>
-                        <li>
-                            <label for="balas">Balas (Numero de unidades)</label>
-                            <label id="precio-balas"></label>
-
-                        </li>
-                        <li>
-
-                            <label for="cantidadBalas">Cantidad de balas:</label>
-                            <input type="number" id="cantidadBalas" min="1" value="1">
-
-                        </li>
-                        <li>
-                            <label for="aparatos-electricos">Aparatos electricos (Numero de unidades)</label>
-                            <label id="precio-aparatos-electricos"></label>
-                        </li>
-
-
-                        <li>
-                            <label for="cantidadElectricos">Cantidad de Aparatos Electricos:</label>
-                            <input type="number" id="cantidadElectricos" min="1" value="1">
-                        </li>
-                    </ul>
-
-
-                </div>
-
-                <ul>
-                    <li>
-                        <label for="precioTotalCotizacion">Precio Total Cotización: </label>
-                        <label id="precioTotalCotizacion"></label>
-                    </li>
-                </ul>
-
-                <button type="submit" class="button">Enviar</button>
-            </div>
-        </form>
-
-    </section>
+        </section>
 
 
 
 
-    <div class="espacio-encabezado"></div>
-    <footer>
-        <p>&copy; 2024 Empresa de Construcción. Todos los derechos reservados.</p>
-    </footer>
+        <div class="espacio-encabezado"></div>
+        <footer>
+            <p>&copy; 2024 Empresa de Construcción. Todos los derechos reservados.</p>
+        </footer>
 
-
+    </div>
 
     <script>
         document.getElementById("miFormulario").addEventListener("submit", function (event) {
