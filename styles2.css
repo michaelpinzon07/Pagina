@@ -160,27 +160,40 @@ input[type="tel"] {
 
 
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 414px) {
+    /* Estilos para dispositivos móviles, como el iPhone */
+    body {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
 
     h1 {
-        font-size: 5vw;
+        font-size: 40px; /* Reduce el tamaño del encabezado */
+        text-align: center; /* Centra el texto */
     }
 
     #presentation {
-        /* background-size: cover;*/
-        /* Ajusta el tamaño de la imagen para cubrir todo el área del encabezado */
-        background-image: url(imagen4.jpg);
-        background-repeat: no-repeat;
-        background-position: right 10vw center;
-        /* Centra la imagen en el encabezado */
-        padding: 200px;
-        padding-bottom: 100px;
-        padding-top: 100px;
-        border-radius: 30px;
-        background-size: 27%;
-        padding-right: 100px;
-        padding-left: 50px;
-    
+        padding: 100px 20px; /* Reduce el espacio en el encabezado */
+        background-size: contain; /* Ajusta el tamaño de la imagen de fondo */
+        background-position: center; /* Centra la imagen */
     }
 
+    .content,
+    .content-izq {
+        width: 90%; /* Reducir el ancho */
+        padding: 20px; /* Reduce el espacio entre el contenido */
+    }
+
+    /* Ajusta el tamaño de los botones */
+    .button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    /* Ajusta el tamaño de los inputs */
+    input[type="number"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
 }
