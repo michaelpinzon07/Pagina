@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3.5vw; /* Tamaño de fuente en relación con el ancho de la ventana */
+    font-family: 'Montserrat';
+    text-align: left;
+    color: #113a3f;
+}
+
+#presentation {
+    background-image: url(imagen4.jpg);
+    background-repeat: no-repeat;
+    background-position: right 10% center; /* Ajuste relativo de la posición */
+    padding: 10vw; /* Espaciado relativo */
+    padding-bottom:3vw;
+    padding-top: 5vw;
+    border-radius: 5vw; /* Borde redondeado relativo */
+    background-size: 20%; /* Tamaño de fondo relativo */
+    padding-left:5vw;;
+}
+
+#contact-form {
+    width: 90%;
+    overflow: hidden;
+    background-image: url(imagen2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5vw; /* Borde redondeado relativo */
+    padding: 2vw; /* Espaciado relativo */
+    margin: 2vw; /* Margen relativo */
+   
+    
+}
+
+.content {
+    
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2vw;
+    border-radius: 2vw;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center; /* Centrar horizontalmente */
+    
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat.otf') format('opentype');
+}
+
+.content-izq {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1); /* Sombra relativa */
+    padding: 2vw;
+    border-radius: 2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button {
+    background-color: #b1764d;
+    color: #fff;
+    padding: 0.5vw 1vw; /* Reducción del padding */
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vw; /* Reducción del tamaño de fuente */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2vw;
+}
+
+.form-group {
+    margin-bottom: 1vw;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5vw;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 95%; /* Ajuste relativo */
+    padding: 1vw;
+    border: 0.1vw solid #ccc; /* Grosor de borde relativo */
+    border-radius: 0.5vw;
+}
+
+.espacio-encabezado {
+    margin-bottom: 2vw;
+}
+
+.sección1 {
+    border-radius: 2vw;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    background-color: #113a3f;
+    color: #ffefcd;
+}
+
+.content-izq input {
+    width: 5%; /* Este valor puede ser problemático, considera ajustarlo relativamente */
+}
