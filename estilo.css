@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat.otf') format('opentype');
+}
+
+h1 {
+    font-size: 3.5vw;
+    /* Tamaño de fuente en relación con el ancho de la ventana */
+    font-family: 'Montserrat';
+    text-align: left;
+    color: #113a3f;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+
+}
+
+.texto {
+    flex: 8;
+    /* El texto tomará todo el espacio disponible */
+}
+
+.imagen {
+    flex: 2;
+    background-image: url(imagen4.jpg); /* Cambia "imagen_pequeña.jpg" por la ruta de tu imagen pequeña */
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    display: flex; /* Utiliza flexbox para alinear verticalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 20px; /* Añade un poco de espacio alrededor de la imagen */
+    
+}
+
+.imagen h1{
+    color: rgba(0, 0, 0, 0); 
+}
+
+.formulario {
+    width: 80%;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2vw;
+    border-radius: 2vw;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+
+}
+
+.contenido {
+    width: 90%;
+    overflow: hidden;
+    background-image: url(imagen2.jpg);
+    background-size: content;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5vw;
+    padding: 2vw;
+    margin: 2vw;
+}
+
+.labeles {
+    margin-bottom: 1vw;
+    /*espacio entre labels*/
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5vw;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 95%;
+    /* Ajuste relativo */
+    padding: 0.5vw;
+    border: 0.1vw solid #ccc;
+    /* Grosor de borde relativo */
+    border-radius: 0.5vw;
+}
+
+.cotizar {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+    border-radius: 2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sección1 {
+    border-radius: 2vw;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    background-color: #113a3f;
+    color: #ffefcd;
+
+}
+
+.cotizar input {
+    width: 5%;
+}
+
+
+.button {
+    background-color: #b1764d;
+    color: #fff;
+    padding: 0.5vw 1vw;
+    /* Reducción del padding */
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vw;
+    /* Reducción del tamaño de fuente */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.espacio {
+    margin-bottom: 2vw;
+}
