@@ -303,7 +303,7 @@
 
             // Realizamos una petición AJAX para enviar los datos al script de Google Apps Script
             var xhr = new XMLHttpRequest();
-            var url = 'https://script.google.com/macros/s/AKfycbwQlsNO4nExHdRW7TryJS37EgxunVjeldNRPSqXfaYOc0qV-AuTKml6GZ8EdpRy-DkK/exec';
+            var url = 'https://script.google.com/macros/s/AKfycbx6_xKls7ugtnGG9SusHHPQoDhzqsqWp1Mo8ZHALxY7C3vBU8vpXi-HCHz-daSc8d4p/exec';
             var params = 'nombre=' + encodeURIComponent(nombre) + '&email=' + encodeURIComponent(email) + '&celular=' + encodeURIComponent(celular) + '&ciudad=' + encodeURIComponent(ciudad) + '&direccion=' + encodeURIComponent(direccion) + '&metraje=' + encodeURIComponent(metraje) + '&precioCocina=' + encodeURIComponent(precioCocina) + '&precioBanos=' + encodeURIComponent(precioBanos) + '&precioHabitacion=' + encodeURIComponent(precioHabitacion) + '&precioGeneral=' + encodeURIComponent(precioGeneral) + '&precioTotalCotizacion=' + encodeURIComponent(precioTotalCotizacion) + '&cantidadBanos=' + encodeURIComponent(cantidadBanos) + '&cantidadHabitaciones=' + encodeURIComponent(cantidadHabitaciones) + '&cantidadBalas=' + encodeURIComponent(cantidadBalas) + '&cantidadElectricos=' + encodeURIComponent(cantidadElectricos);
             xhr.open('POST', url);
             xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
