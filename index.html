@@ -57,7 +57,7 @@
                         <label for="metraje">Metros:</label>
                         <input type="number" id="metraje" name="metraje" required>
                     </div>
-                    <button type="button" class="button" onclick="guardarMetros_mostrar()">COTIZAR</button>
+                    <button type="submit" class="button" onclick="guardarMetros_mostrar()">COTIZAR</button>
                 </div>
 
 
@@ -245,7 +245,7 @@
                         </li>
                     </ul>
 
-                    <button type="submit" class="button">Enviar</button>
+                    <button type="button" class="button" onclick="enviarFormulario1()">Enviar</button>
                 </div>
             </form>
 
@@ -262,6 +262,7 @@
     </div>
 
     <script>
+        
         document.getElementById("miFormulario").addEventListener("submit", function (event) {
             // Evitar que el formulario se envíe automáticamente
             event.preventDefault();
@@ -271,6 +272,10 @@
 
         function guardarMetros_mostrar() {
             var metros = document.getElementById('metraje').value;
+            if (metros === '') {
+                alert('Por favor, llena el campo de metraje.');
+                return false; // Detiene la ejecución del código
+            }
             localStorage.setItem('metros', metros);
             calcularPrecios(parseInt(metros));
 
@@ -279,6 +284,55 @@
         }
 
         function enviarFormulario() {
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var celular = document.getElementById('celular').value;
+            var ciudad = document.getElementById('ciudad').value;
+            var direccion = document.getElementById('direccion').value;
+            var metraje = document.getElementById('metraje').value;
+            var precioCocina = document.getElementById('precioCocina').innerText;
+            var precioBanos = document.getElementById('precioBanos').innerText;
+            var precioHabitacion = document.getElementById('precioHabitacion').innerText;
+            var precioGeneral = document.getElementById('precioGeneral').innerText;
+            var precioTotalCotizacion = document.getElementById('precioTotalCotizacion').innerText;
+            var cantidadBanos = document.getElementById('cantidadBanos').value;
+            var cantidadHabitaciones = document.getElementById('cantidadHabitaciones').value;
+            var cantidadBalas = document.getElementById('cantidadBalas').value;
+            var cantidadElectricos = document.getElementById('cantidadElectricos').value;
+
+
+            // Realizamos una petición AJAX para enviar los datos al script de Google Apps Script
+            var xhr = new XMLHttpRequest();
+            var url = 'https://script.google.com/macros/s/AKfycbwQlsNO4nExHdRW7TryJS37EgxunVjeldNRPSqXfaYOc0qV-AuTKml6GZ8EdpRy-DkK/exec';
+            var params = 'nombre=' + encodeURIComponent(nombre) + '&email=' + encodeURIComponent(email) + '&celular=' + encodeURIComponent(celular) + '&ciudad=' + encodeURIComponent(ciudad) + '&direccion=' + encodeURIComponent(direccion) + '&metraje=' + encodeURIComponent(metraje) + '&precioCocina=' + encodeURIComponent(precioCocina) + '&precioBanos=' + encodeURIComponent(precioBanos) + '&precioHabitacion=' + encodeURIComponent(precioHabitacion) + '&precioGeneral=' + encodeURIComponent(precioGeneral) + '&precioTotalCotizacion=' + encodeURIComponent(precioTotalCotizacion) + '&cantidadBanos=' + encodeURIComponent(cantidadBanos) + '&cantidadHabitaciones=' + encodeURIComponent(cantidadHabitaciones) + '&cantidadBalas=' + encodeURIComponent(cantidadBalas) + '&cantidadElectricos=' + encodeURIComponent(cantidadElectricos);
+            xhr.open('POST', url);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function () {
+                // Verificamos si la solicitud se completó correctamente (código de estado 200)
+                if (xhr.status === 200) {
+                    /*
+                    // Obtenemos los metros y los convertimos a número entero
+                    var metros = parseInt(metraje);
+                    // Calculamos los precios con los metros ingresados
+                    calcularPrecios(metros);
+                    */
+                   /*
+                    var url = 'index.html';
+                    window.location.href = url;
+
+                    */
+                } else {
+                    // Manejamos cualquier error que ocurra durante la solicitud
+                    alert('Error al guardar los datos. Inténtalo de nuevo más tarde.');
+                }
+            };
+
+            // Enviamos la solicitud con los parámetros del formulario
+            xhr.send(params);
+        }
+
+        function enviarFormulario1() {
             var nombre = document.getElementById('nombre').value;
             var email = document.getElementById('email').value;
             var celular = document.getElementById('celular').value;
@@ -312,8 +366,11 @@
                     // Calculamos los precios con los metros ingresados
                     calcularPrecios(metros);
                     */
+                   
                     var url = 'index.html';
                     window.location.href = url;
+
+                    
                 } else {
                     // Manejamos cualquier error que ocurra durante la solicitud
                     alert('Error al guardar los datos. Inténtalo de nuevo más tarde.');
